@@ -1,6 +1,5 @@
 module ChinaCities
   class DistrictsController < ApplicationController
-    respond_to :html, :json
 
     def json_file
       send_file "#{ChinaCities::Engine.root.to_s}/db/cities.json"
